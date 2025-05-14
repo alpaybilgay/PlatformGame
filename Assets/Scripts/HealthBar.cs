@@ -24,7 +24,7 @@ public class HealthBar : MonoBehaviour
     {
        
         healthSlider.value = CalculateSliderPercantage(playerDamageable.Health,playerDamageable.MaxHealth);
-        healthBarText.text = "HP   " + playerDamageable.Health + " / " + playerDamageable.MaxHealth;
+        healthBarText.text = "HP " + playerDamageable.Health + " / " + playerDamageable.MaxHealth;
     }
 
     private void OnEnable()
@@ -50,6 +50,6 @@ public class HealthBar : MonoBehaviour
     private void OnPlayerHealthChanged(int newHealth, int maxHealth)
     {
         healthSlider.value = CalculateSliderPercantage(newHealth, maxHealth);
-        healthBarText.text = "HP" + newHealth + " / " + maxHealth;
+        healthBarText.text = "HP " + newHealth + " / " + maxHealth;
     }
 }
